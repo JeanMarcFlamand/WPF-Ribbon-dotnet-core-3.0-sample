@@ -17,14 +17,14 @@
 
         <ribbon:Ribbon x:Name="Ribbon" Title="Ribbon Title">
             <ribbon:Ribbon.HelpPaneContent>
-                <ribbon:RibbonButton SmallImageSource="Images/SmallIcon.png" />
+                <ribbon:RibbonButton SmallImageSource="Images\SmallIcon.png" />
             </ribbon:Ribbon.HelpPaneContent>
             <ribbon:Ribbon.QuickAccessToolBar>
                 <ribbon:RibbonQuickAccessToolBar >
                     <ribbon:RibbonButton x:Name="QATButton1" 
-                                         SmallImageSource="Images/SmallIcon.png" />
+                                         SmallImageSource="Images\SmallIcon.png" />
                     <ribbon:RibbonButton x:Name="QATButton2" 
-                                         SmallImageSource="Images/SmallIcon.png" />
+                                         SmallImageSource="Images\SmallIcon.png" />
                 </ribbon:RibbonQuickAccessToolBar>
             </ribbon:Ribbon.QuickAccessToolBar>
             <ribbon:Ribbon.ApplicationMenu>
