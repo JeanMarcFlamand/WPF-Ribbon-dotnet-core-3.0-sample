@@ -3,10 +3,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:ribbon="clr-namespace:Microsoft.Windows.Controls.Ribbon;assembly=RibbonControlsLibrary"
         xmlns:local="clr-namespace:WpfDoNetcore3"
         mc:Ignorable="d"
-        x:Name="RibbonWindow"
         Title="MainWindow" Height="450" Width="800">
 
     <Grid x:Name="LayoutRoot">
@@ -15,43 +13,44 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <ribbon:Ribbon x:Name="Ribbon" Title="Ribbon Title">
-            <ribbon:Ribbon.HelpPaneContent>
-                <ribbon:RibbonButton SmallImageSource="Images\SmallIcon.png" />
-            </ribbon:Ribbon.HelpPaneContent>
-            <ribbon:Ribbon.QuickAccessToolBar>
-                <ribbon:RibbonQuickAccessToolBar >
-                    <ribbon:RibbonButton x:Name="QATButton1" 
-                                         SmallImageSource="Images\SmallIcon.png" />
-                    <ribbon:RibbonButton x:Name="QATButton2" 
-                                         SmallImageSource="Images\SmallIcon.png" />
-                </ribbon:RibbonQuickAccessToolBar>
-            </ribbon:Ribbon.QuickAccessToolBar>
-            <ribbon:Ribbon.ApplicationMenu>
-                <ribbon:RibbonApplicationMenu SmallImageSource="Images\SmallIcon.png">
-                    <ribbon:RibbonApplicationMenuItem Header="Hello _Ribbon"
+        <Ribbon x:Name="Ribbon" Title="Ribbon Title">
+            <Ribbon.HelpPaneContent>
+                <RibbonButton  />
+            </Ribbon.HelpPaneContent>
+            <Ribbon.QuickAccessToolBar>
+                <RibbonQuickAccessToolBar >
+                    <RibbonButton x:Name="QATButton1" 
+                                          />
+                    <RibbonButton x:Name="QATButton2" 
+                                          />
+                </RibbonQuickAccessToolBar>
+            </Ribbon.QuickAccessToolBar>
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu >
+                    <RibbonApplicationMenuItem Header="Hello _Ribbon"
                                                       x:Name="MenuItem1"
-                                                      ImageSource="Images\largeicon.png"/>
-                </ribbon:RibbonApplicationMenu>
-            </ribbon:Ribbon.ApplicationMenu>
-            <ribbon:RibbonTab x:Name="HomeTab" 
+                                                      />
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+            <RibbonTab x:Name="HomeTab" 
                               Header="Home">
-                <ribbon:RibbonGroup x:Name="Group1" 
+                <RibbonGroup x:Name="Group1" 
                                     Header="Group1">
-                    <ribbon:RibbonButton x:Name="Button1"
-                                         LargeImageSource="Images\largeicon.png"
+                    <RibbonButton x:Name="Button1"
+                                         
                                          Label="Button1" />
-                    <ribbon:RibbonButton x:Name="Button2"
-                                         SmallImageSource="Images\SmallIcon.png"
+                    <RibbonButton x:Name="Button2"
+                                         
                                          Label="Button2" />
-                    <ribbon:RibbonButton x:Name="Button3"
-                                         SmallImageSource="Images\SmallIcon.png"
+                    <RibbonButton x:Name="Button3"
+                                         
                                          Label="Button3" />
-                    <ribbon:RibbonButton x:Name="Button4"
-                                         SmallImageSource="Images\SmallIcon.png"
-                                         Label="Button4" />
-                </ribbon:RibbonGroup>
-            </ribbon:RibbonTab>
-        </ribbon:Ribbon>
-    </Grid> 
+                    <RibbonButton x:Name="Button4"
+                                         
+                                         Label="Button4" LargeImageSource="/Images/Smallicon.png" SmallImageSource="/Images/Smallicon.png" />
+                </RibbonGroup>
+            </RibbonTab>
+        </Ribbon>
+    </Grid>
+
 </Window>
